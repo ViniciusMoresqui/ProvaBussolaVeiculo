@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac64a1c1-223d-41ca-a5bd-7b9905859101" name="Changes" comment="" />
+    <list default="true" id="ac64a1c1-223d-41ca-a5bd-7b9905859101" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Controller/ControllerAcessorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Controller/ControllerVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Controller/ControllerVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Entidy/Acessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Entidy/Acessorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Entidy/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Entidy/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Repository/RepositoryAcessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Repository/RepositoryAcessorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Service/ServiceAcessorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Service/ServiceVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Service/ServiceVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bussola/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Bussola/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +28,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -37,10 +51,12 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.BussolaApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vitor/OneDrive/Área de Trabalho/Bussola",
+    "last_opened_file_path": "C:/Users/vitor/OneDrive/Área de Trabalho/Prova/BackendJava",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -62,5 +78,25 @@
       <workItem from="1775687101017" duration="9000" />
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Entidy/Veiculo.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Bussola/src/main/java/com/ProvaBussola/Bussola/Service/ServiceVeiculo.java</url>
+          <line>17</line>
+          <properties class="com.ProvaBussola.Bussola.Service.ServiceVeiculo" method="salvarVeiculo">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,10 +11,6 @@ public class ServiceVeiculo {
     @Autowired
     private RepositoryVeiculo repositoryVeiculo;
 
-    public ServiceVeiculo(Veiculo veiculo) {
-        this.repositoryVeiculo = repositoryVeiculo ;
-    }
-
     public List<Veiculo> listarVeiculo(){
         return this.repositoryVeiculo.findAll();
     }
@@ -27,14 +23,18 @@ public class ServiceVeiculo {
         return repositoryVeiculo.findById(id).orElse(null);
     }
 
-    public Veiculo atualizarVeiculo(Long id, Veiculo veiculo){
-        Veiculo veiculo1 = repositoryVeiculo.findById(id).orElse(null);
-        if(veiculo1 != null){
-            veiculo1.setModelo(atualizarVeiculo(id,veiculo).getModelo());
-            veiculo1.setPlaca(atualizarVeiculo(id, veiculo).getPlaca());
-            veiculo1.setAnoFabricacao(atualizarVeiculo(id, veiculo).getAnoFabricacao());
-        }
-        return veiculo1;
+    public Veiculo atualizarVeiculo(Long id, Veiculo veiculo) {
+        return repositoryVeiculo.findById(id).map(veiculo1 -> {
+
+            veiculo1.setModelo(veiculo.getModelo());
+            veiculo1.setPlaca(veiculo.getPlaca());
+            veiculo1.setAnoFabricacao(veiculo.getAnoFabricacao());
+
+            veiculo1.setAcessorios(veiculo.getAcessorios());
+
+            return repositoryVeiculo.save(veiculo1);
+
+        }).orElse(null);
     }
 
     public void deletarVeiculo(Long id) {

@@ -10,21 +10,17 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @ResponseBody
-@RequestMapping("/livro")
+@RequestMapping("/veiculos")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class ControllerVeiculo {
 
-  private final ServiceVeiculo serviceVeiculo;
-
   @Autowired
-  public ControllerVeiculo(Veiculo veiculo) {
-    this.serviceVeiculo = new ServiceVeiculo(veiculo) ;
-  }
+  private ServiceVeiculo serviceVeiculo;
 
-  @PostMapping
+  @GetMapping
   public List<Veiculo> listarVeiculo() {
     return this.listarVeiculo();
   }
-
 
   @PostMapping
   public ResponseEntity<Veiculo> salvarVeiculo(@RequestBody Veiculo veiculo){

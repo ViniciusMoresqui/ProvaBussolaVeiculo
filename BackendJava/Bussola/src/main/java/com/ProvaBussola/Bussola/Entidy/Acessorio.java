@@ -12,7 +12,7 @@ public class Acessorio {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
 
     private Long id;
-    private String acessorio;
+    private String nome;
 
     public Acessorio() {
     }
@@ -25,11 +25,11 @@ public class Acessorio {
         this.id = id;
     }
 
-    public String getAcessorio() {
-        return acessorio;
+    public String getNome() {
+        return nome;
     }
 
-    public void setAcessorio(String acessorio) {
-        this.acessorio = acessorio;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

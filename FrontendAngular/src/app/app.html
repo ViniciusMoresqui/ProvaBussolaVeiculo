@@ -1,3 +1,51 @@
+<h1>Sistema de Veículos</h1>
 
- <h1> Veiculos</h1>
-<router-outlet></router-outlet>
+<div>
+  <label>Modelo:</label>
+  <input type="text" [(ngModel)]="veiculo.modelo">
+</div>
+<br>
+
+<div>
+  <label>Ano:</label>
+  <input type="number" [(ngModel)]="veiculo.anoFabricacao">
+</div>
+<br>
+
+<div>
+  <label>Placa:</label>
+  <input type="text" [(ngModel)]="veiculo.placa">
+</div>
+<br>
+
+<div>
+  <label>Acessório:</label>
+  <input type="text" [(ngModel)]="novoAcessorio">
+  <button (click)="addAcessorio()">Inserir Acessório</button>
+</div>
+
+ <ul>
+  <li *ngFor="let a of veiculo.acessorios; let i = index">a
+    {{ a.nome }}
+    <button (click)="removerAcessorio(i)">Apagar</button>
+  </li>
+</ul>
+
+<button (click)="salvar()">Salvar Tudo</button>
+
+<hr>
+
+<div>
+  <label>Id</label>
+  <label>|</label>
+  <label>Modelo</label>
+  <label>|</label>
+  <label>Ano Fabricação</label>
+  <label>|</label>
+  <label>placa</label>
+  <label>|</label>
+  <label>Acessorio</label>
+
+</div>
+
+<br><br>
